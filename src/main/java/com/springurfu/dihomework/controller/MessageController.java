@@ -25,6 +25,7 @@ public class MessageController {
     @Autowired
     public void setSetterInjectedService(@Qualifier("smsMessageService") MessageService setterInjectedService) {
         this.setterInjectedService = setterInjectedService;
+
     }
 
     public void printMessages() {
