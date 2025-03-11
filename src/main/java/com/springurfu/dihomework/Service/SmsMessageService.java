@@ -8,6 +8,7 @@ import jakarta.annotation.PreDestroy;
 public class SmsMessageService implements MessageService {
 
     public SmsMessageService() {
+
         System.out.println("SmsMessageService создан");
     }
 

@@ -22,13 +22,11 @@ public class MessageController {
         this.emailService = emailService;
     }
 
-    // DI через сеттер с @Autowired для автоматического инжекта
     @Autowired
     public void setSetterInjectedService(@Qualifier("smsMessageService") MessageService setterInjectedService) {
         this.setterInjectedService = setterInjectedService;
     }
 
-    // Метод для вывода сообщений
     public void printMessages() {
         System.out.println("Constructor DI: " + emailService.getMessage());
         System.out.println("Field DI: " + smsService.getMessage());
