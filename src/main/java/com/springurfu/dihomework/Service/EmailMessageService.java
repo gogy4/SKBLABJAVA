@@ -8,7 +8,7 @@ import jakarta.annotation.PreDestroy;
 public class EmailMessageService implements MessageService {
 
     public EmailMessageService() {
-        System.out.println("EmailMessageService создан");
+        log.info("EmailMessageService создан");
     }
 
     @Override
@@ -18,11 +18,11 @@ public class EmailMessageService implements MessageService {
 
     @PostConstruct
     public void init() {
-        System.out.println("EmailMessageService инициализирован");
+        log.info("SmsMessageService инициализирован");
     }
 
     @PreDestroy
     public void destroy() {
-        System.out.println("EmailMessageService уничтожен");
+        log.info("EmailMessageService уничтожен");
     }
 }

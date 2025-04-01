@@ -8,29 +8,25 @@ import org.springframework.stereotype.Component;
 @Component
 public class MessageController {
 
-    private final MessageService emailService; // DI через конструктор
+    private final MessageService emailService;
 
     @Autowired
-    @Qualifier("smsMessageService") // DI через поле, указание конкретного бина
-    private MessageService smsService;
+    private MessageService smsMessageService;
 
-    private MessageService setterInjectedService; // DI через сеттер
+    private MessageService setterInjectedService;
 
-    // DI через конструктор с @Qualifier для явного указания, какой бин использовать
-    @Autowired
-    public MessageController(@Qualifier("emailMessageService") MessageService emailService) {
-        this.emailService = emailService;
+    public MessageController(MessageService emailMessageService) {
+        this.emailService = emailMessageService;
     }
 
     @Autowired
-    public void setSetterInjectedService(@Qualifier("smsMessageService") MessageService setterInjectedService) {
-        this.setterInjectedService = setterInjectedService;
-
+    public void setSetterInjectedService(MessageService smsMessageService) {
+        this.setterInjectedService = smsMessageService;
     }
 
     public void printMessages() {
-        System.out.println("Constructor DI: " + emailService.getMessage());
-        System.out.println("Field DI: " + smsService.getMessage());
-        System.out.println("Setter DI: " + setterInjectedService.getMessage());
+        log.info("Constructor DI: " + emailService.getMessage());
+        log.info("Field DI: " + smsMessageService.getMessage());
+        log.info("Setter DI: " + setterInjectedService.getMessage());
     }
 }

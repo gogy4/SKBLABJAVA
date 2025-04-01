@@ -1,4 +1,5 @@
 package com.springurfu.dihomework.Service;
+
 import org.springframework.stereotype.Service;
 
 import jakarta.annotation.PostConstruct;
@@ -8,8 +9,7 @@ import jakarta.annotation.PreDestroy;
 public class SmsMessageService implements MessageService {
 
     public SmsMessageService() {
-
-        System.out.println("SmsMessageService создан");
+        log.info("SmsMessageService создан");
     }
 
     @Override
@@ -19,11 +19,11 @@ public class SmsMessageService implements MessageService {
 
     @PostConstruct
     public void init() {
-        System.out.println("SmsMessageService инициализирован");
+        log.info("SmsMessageService инициализирован");
     }
 
     @PreDestroy
     public void destroy() {
-        System.out.println("SmsMessageService уничтожен");
+        log.info("SmsMessageService уничтожен");
     }
 }
