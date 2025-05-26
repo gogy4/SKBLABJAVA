@@ -1,2 +1,11 @@
-D:\Java Projects\skblab\src\main\java\com\springurfu\webhomework\validator\PasswordValidator.java
-D:\Java Projects\skblab\src\main\java\com\springurfu\webhomework\validator\ValidPassword.java
+D:\Java Projects\SKBLABJAWA\src\main\java\com\springurfu\dbhomework\repository\ToDoItemRepository.java
+D:\Java Projects\SKBLABJAWA\src\main\java\com\springurfu\dbhomework\controller\DBController.java
+D:\Java Projects\SKBLABJAWA\src\main\java\com\springurfu\dbhomework\dto\TodoListRequest.java
+D:\Java Projects\SKBLABJAWA\src\main\java\com\springurfu\dbhomework\entities\ToDoItemEntity.java
+D:\Java Projects\SKBLABJAWA\src\main\java\com\springurfu\dbhomework\DBApplication.java
+D:\Java Projects\SKBLABJAWA\src\main\java\com\springurfu\dbhomework\mapper\ToDoItemMapper.java
+D:\Java Projects\SKBLABJAWA\src\main\java\com\springurfu\dbhomework\entities\ToDoListEntity.java
+D:\Java Projects\SKBLABJAWA\src\main\java\com\springurfu\dbhomework\services\ToDoService.java
+D:\Java Projects\SKBLABJAWA\src\main\java\com\springurfu\dbhomework\mapper\ToDoListMapper.java
+D:\Java Projects\SKBLABJAWA\src\main\java\com\springurfu\dbhomework\repository\ToDoListRepository.java
+D:\Java Projects\SKBLABJAWA\src\main\java\com\springurfu\dbhomework\dto\ToDoItemRequest.java
