@@ -1,2 +1,15 @@
-com\springurfu\webhomework\validator\PasswordValidator.class
-com\springurfu\webhomework\validator\ValidPassword.class
+com\springurfu\dbhomework\entities\ToDoItemEntity$ToDoItemEntityBuilder.class
+com\springurfu\dbhomework\dto\ToDoItemRequest$ToDoItemRequestBuilder.class
+com\springurfu\dbhomework\entities\ToDoListEntity.class
+com\springurfu\dbhomework\mapper\ToDoListMapper.class
+com\springurfu\dbhomework\controller\DBController.class
+com\springurfu\dbhomework\entities\ToDoItemEntity.class
+com\springurfu\dbhomework\entities\ToDoListEntity$ToDoListEntityBuilder.class
+com\springurfu\dbhomework\dto\TodoListRequest.class
+com\springurfu\dbhomework\DBApplication.class
+com\springurfu\dbhomework\repository\ToDoListRepository.class
+com\springurfu\dbhomework\dto\TodoListRequest$TodoListRequestBuilder.class
+com\springurfu\dbhomework\services\ToDoService.class
+com\springurfu\dbhomework\mapper\ToDoItemMapper.class
+com\springurfu\dbhomework\dto\ToDoItemRequest.class
+com\springurfu\dbhomework\repository\ToDoItemRepository.class
